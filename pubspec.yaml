@@ -1,0 +1,51 @@
+name: tasbih
+description: "A personal offline Tasbih counter application."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.2
+
+  # Local SQLite database
+  sqflite: ^2.4.1
+  sqflite_common_ffi: ^2.3.4+4
+  sqflite_common_ffi_web: ^0.4.5+2
+
+  # Path utilities
+  path: ^1.9.1
+
+  # Local key-value settings
+  shared_preferences: ^2.3.5
+
+  # Date formatting for history screen
+  intl: ^0.20.2
+
+  # Typography
+  google_fonts: ^6.2.1
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+  # File picker for backup/restore (no internet, purely local)
+  file_picker: ^8.3.7
+  path_provider: ^2.1.5
+  audioplayers: ^6.8.1
+  vibration: ^3.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sounds/
